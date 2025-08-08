@@ -1,0 +1,153 @@
+/* نفس التنسيقات العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #4B2E2E 0%, #8B4513 50%, #C68642 100%);
+    color: #2c1810;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2c1810;
+    font-weight: 500;
+    padding: 20px 25px;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav a:hover {
+    background: linear-gradient(45deg, #4B2E2E, #8B4513);
+    color: white;
+}
+
+/* Hero Section */
+.hero_section {
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(75, 46, 46, 0.3)),
+        url('../image/coffee_background.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    margin: 40px auto;
+}
+
+#title {
+    font-family: 'Playwrite AU QLD', cursive;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero_section p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+/* Coffee Menu Section */
+.menu {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    font-family: 'Playwrite AU QLD', cursive;
+    font-size: 2.2rem;
+    color: #4B2E2E;
+    margin-bottom: 20px;
+}
+
+.menu p {
+    color: #5d4037;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.coffee-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 3px solid #4B2E2E;
+}
+
+.coffee-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(75, 46, 46, 0.2);
+}
+
+.coffee-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.coffee-item img:hover {
+    transform: scale(1.05);
+}
+
+.coffee-item h3 {
+    font-family: 'Playwrite AU QLD', cursive;
+    font-size: 1.3rem;
+    color: #4B2E2E;
+    margin-bottom: 10px;
+}
+
+.coffee-item p {
+    color: #5d4037;
+}
+
+.coffee-item .price {
+    font-weight: bold;
+    color: #4B2E2E;
+    margin-top: 10px;
+}
